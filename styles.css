@@ -1,0 +1,112 @@
+/* file src/styles.css*/
+
+/* You can add global styles to this file, and also import other style files */
+
+body {   
+   
+    margin-left: 40px; /* отступ слева */
+    margin-right: 40px;
+    /*margin-top: 20px;*/
+
+    display: flex; /* Flexbox для обеспечения растяжения содержимого и прижатия подвала к низу */
+    flex-direction: column; /* устанавливаем направление flex-контейнера на колонку */
+    min-height: 100vh; /* высота 100% от высоты окна просмотра */
+    /*margin: 0 15px; */
+    padding: 5px 10px 0;
+    /*background-color: rgb(240, 240, 240); /* серый цвет, фон всей страницы */
+    background-color: rgb(135, 160, 245);
+    font-family: Verdana, sans-serif; /* стиль шрифта Verdana без засечек */
+    font-size: 16px; /* размер шрифта */
+    color: black; /* цвет текста */
+
+}
+.indented {
+    text-indent: 20px; /* Отступ первой строки в 20 пикселей */
+}
+.container {
+    flex: 1; /* Контейнер будет растягиваться, занимая все доступное пространство */
+    padding: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f1f1f1;
+    width: 100%;    
+    margin-top: auto; /* прижимаем footer к низу */
+}
+h1 {
+    color: rgb(50,50,250);
+}
+/* добавили */
+html {
+    font-size: 14px;
+  }
+  
+  @media (min-width: 768px) {
+    html {
+      font-size: 12px;
+    }
+  }
+  
+  .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+  }
+  
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+  
+  body {
+      margin-bottom: 60px;
+      /*background-color: yellow; /* временный стиль для проверки */
+  }
+  /* добавляем стиль к странице Register.cshtml */
+  .registration-form {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+      margin-bottom: 20px;
+  }
+  
+  .form-group {
+      margin-bottom: 15px;
+  }
+  
+  .control-label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+  }
+  
+  .form-control {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+  }
+  
+  .text-danger {
+      color: #dc3545;
+      font-size: 0.875em;
+  }
+  
+  .btn-primary {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+  }
+  
+      .btn-primary:hover {
+          background-color: #0056b3;
+      }
+  

@@ -1,0 +1,33 @@
+<!-- file MyApp1/src/index.html -->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> MyApp2 Angular </title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!--  <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+ <link rel="icon" type="image/x-icon" href="computer.png">
+<!--  <img src="brand/computer.png" width="56">  -->  <!-- иконка Компьютер-->
+
+</head>
+<body>
+  <app-root></app-root>
+  <my-app>Загрузка...</my-app>
+
+  <footer class="border-top footer text-muted">
+    <div class="container">
+      &copy; "Game Club" - <span id="currentYear"></span>. All rights reserved.
+      <a href="/Main">Главная</a>
+      <a href="">Privacy</a>
+    </div>
+</footer>
+
+</body>
+</html>
+<script>
+  document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+
+<!-- 33 lines of code -->
